@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="ad.size" content="width=970,height=90">
+		<title>Banner</title>
+		<script>var clickTag = "";</script>
+		
+		<style>
+			body {margin: 0;}
+			body * {position: absolute; box-sizing: border-box;}
+			img {border:none;}
+			#banner {display: block; cursor: pointer; width: 970px; height: 90px; overflow: hidden; border: 1px solid #fff;}
+			#container {width: 970px; height: 90px;}
+			#contents {width: 970px; height: 90px; top: 0px; left: 0px; background-color: #fefeb4; background-repeat: no-repeat; overflow: hidden; display: none;}
+			
+
+			#bg1 {
+				left: 0px;
+				top: 0px;
+				width: 432px;
+				height: 90px;
+				position: absolute;
+				visibility: visible;
+			}
+			
+			#cal {
+				left: 900px;
+				top: 0px;
+				width: 70px;
+				height: 90px;
+				position: absolute;
+				visibility: visible;
+			}
+			
+			#cta {
+				left: 1000px;
+				top: 12px;
+				width: 126px;
+				height: 32px;
+				position: absolute;
+				visibility: visible;
+			}
+			
+			#n1 {
+				left: 628px;
+				top: 0px;
+				width: 264px;
+				height: 90px;
+				position: absolute;
+				visibility: visible;
+			}
+			
+			#n2 {
+				left: 990px;
+				top: 50px;
+				width: 210px;
+				height: 28px;
+				position: absolute;
+				visibility: visible;
+			}
+
+			#can1, #cl1 {
+				left: 0px;
+				top: 0px;
+				width: 111px;
+				height: 216px;
+				position: absolute;
+				visibility: visible;
+			}
+
+			#can2, #cl2 {
+				left: 0px;
+				top: 0px;
+				width: 121x;
+				height: 234px;
+				position: absolute;
+				visibility: visible;
+			}
+
+			#can3, #cl3 {
+				left: 0px;
+				top: 0px;
+				width: 111px;
+				height: 215px;
+				position: absolute;
+				visibility: visible;
+			}
+
+			#can1 {
+				left: 1690px;
+				top: 18px;
+				transform-origin: 100% 100%;
+			}
+
+			#can2 {
+				left: 1680px;
+				top: 0px;
+				transform-origin: 100% 100%;
+			}
+
+			#can3 {
+				left: 1690px;
+				top: 18px;
+				transform-origin: 100% 100%;
+			}
+
+			#c1, #c2, #c3 {
+				left: 1822px;
+				top: 33px;
+				width: 71px;
+				height: 15px;
+				position: absolute;
+				visibility: visible;
+			}
+
+			#canlock {
+				left: 0px;
+				top: 0px;
+				width: 970px;
+				height: 90px;
+				position: absolute;
+				visibility: visible;
+			}
+
+			#cl1 {
+				left: 446px;
+				top: 16px;
+			}
+
+			#cl2 {
+				left: 552px;
+				top: 6px;
+			}
+
+			#cl3 {
+				left: 670px;
+				top: 16px;
+			}
+
+			#sh1, #sh2, #sh3 {
+				left: 0px;
+				top: 0px;
+				width: 180px;
+				height: 15px;
+				position: absolute;
+				visibility: visible;
+			}
+
+			#sh1 {
+				left: 444px;
+				top: 223px;
+			}
+
+			#sh2 {
+				left: 549px;
+				top: 230px;
+			}
+
+			#sh3 {
+				left: 668px;
+				top: 223px;
+			}
+
+			#fruit1, #fruit1b, #fruit2, #fruit2b, #fruit3, #fruit3b {
+				left: 300px;
+				top: -200px;
+				width: 970px;
+				height: 90px;
+				position: absolute;
+				visibility: visible;
+			}
+
+			#fr1aC, #fr1cC, #fr1eC, #fr1gC, #fr1iC, #fr1jC {
+				left: 0px;
+				top: 0px;
+				width: 35px;
+				height: 26px;
+				position: absolute;
+				visibility: visible;
+				transform-origin: 50% 50%;
+			}
+
+			#fr1a, #fr1c, #fr1e, #fr1g, #fr1i, #fr1j {
+				left: 0px;
+				top: 0px;
+				width: 35px;
+				height: 26px;
+				position: absolute;
+				visibility: visible;
+			}
+			
+			#fr1aC {
+				left: 1320px;
+				top: 235px;
+				transform: rotate(75deg);
+			}
+			
+			#fr1cC {
+				left: 1425px;
+				top: 212px;
+				transform: rotate(215deg);
+			}
+			
+			#fr1eC {
+				left: 1400px;
+				top: 227px;
+			}
+			
+			#fr1gC {
+				left: 1500px;
+				top: 225px;
+			}
+			
+			#fr1iC {
+				left: 1490px;
+				top: 265px;
+			}
+			
+			#fr1jC {
+				left: 1520px;
+				top: 275px;
+			}
+
+			#fr1bC, #fr1dC, #fr1fC, #fr1hC, #fr1kC {
+				left: 0px;
+				top: 0px;
+				width: 26px;
+				height: 21px;
+				position: absolute;
+				visibility: visible;
+				transform-origin: 50% 50%;
+			}
+
+			#fr1b, #fr1d, #fr1f, #fr1h, #fr1k {
+				left: 0px;
+				top: 0px;
+				width: 26px;
+				height: 21px;
+				position: absolute;
+				visibility: visible;
+			}
+			
+			#fr1bC {
+				left: 1380px;
+				top: 205px;
+			}
+			
+			#fr1dC {
+				left: 1465px;
+				top: 240px;
+				transform: rotate(115deg);
+			}
+			
+			#fr1fC {
+				left: 1485px;
+				top: 250px;
+				transform: rotate(290deg);
+			}
+			
+			#fr1hC {
+				left: 1530px;
+				top: 290px;
+				transform: rotate(20deg);
+			}
+			
+			#fr1kC {
+				left: 1545px;
+				top: 215px;
+				transform: rotate(290deg);
+			}
+
+
+
+
+
+
+			
+
+			#fr2aC, #fr2cC, #fr2eC, #fr2fC, #fr2hC, #fr2iC, #fr2jC, #fr2kC, #fr2lC {
+				left: 0px;
+				top: 0px;
+				width: 30px;
+				height: 18px;
+				position: absolute;
+				visibility: visible;
+				transform-origin: 50% 50%;
+			}
+
+			#fr2a, #fr2c, #fr2e, #fr2f, #fr2h, #fr2i, #fr2j, #fr2k, #fr2l {
+				left: 0px;
+				top: 0px;
+				width: 30px;
+				height: 18px;
+				position: absolute;
+				visibility: visible;
+			}
+			
+			#fr2aC {
+				left: 1390px;
+				top: 210px;
+				transform: rotate(75deg);
+			}
+			
+			#fr2cC {
+				left: 1455px;
+				top: 207px;
+				transform: rotate(215deg);
+			}
+			
+			#fr2eC {
+				left: 1400px;
+				top: 248px;
+			}
+			
+			#fr2fC {
+				left: 1430px;
+				top: 221px;
+				transform: rotate(145deg);
+			}
+			
+			#fr2hC {
+				left: 1400px;
+				top: 235px;
+				transform: rotate(345deg);
+			}
+			
+			#fr2iC {
+				left: 1530px;
+				top: 225px;
+				transform: rotate(245deg);
+			}
+			
+			#fr2jC {
+				left: 1500px;
+				top: 265px;
+				transform: rotate(45deg);
+			}
+			
+			#fr2kC {
+				left: 1495px;
+				top: 275px;
+				transform: rotate(145deg);
+			}
+			
+			#fr2lC {
+				left: 1470px;
+				top: 270px;
+				transform: rotate(105deg);
+			}
+
+			#fr2bC, #fr2dC, #fr2gC {
+				left: 0px;
+				top: 0px;
+				width: 30px;
+				height: 23px;
+				position: absolute;
+				visibility: visible;
+				transform-origin: 50% 50%;
+			}
+
+			#fr2b, #fr2d, #fr2g {
+				left: 0px;
+				top: 0px;
+				width: 30px;
+				height: 23px;
+				position: absolute;
+				visibility: visible;
+			}
+			
+			#fr2bC {
+				left: 1350px;
+				top: 205px;
+			}
+			
+			#fr2dC {
+				left: 1465px;
+				top: 245px;
+				transform: rotate(115deg);
+			}
+			
+			#fr2gC {
+				left: 1505px;
+				top: 205px;
+				transform: rotate(115deg);
+			}
+			
+			
+			
+			
+			
+
+			#fr3aC, #fr3dC, #fr3hC, #fr3iC {
+				left: 0px;
+				top: 0px;
+				width: 26px;
+				height: 23px;
+				position: absolute;
+				visibility: visible;
+				transform-origin: 50% 50%;
+			}
+
+			#fr3a, #fr3d, #fr3h, #fr3i {
+				left: 0px;
+				top: 0px;
+				width: 26px;
+				height: 23px;
+				position: absolute;
+				visibility: visible;
+			}
+			
+			#fr3aC {
+				left: 1420px;
+				top: 240px;
+				transform: rotate(75deg);
+			}
+			
+			#fr3dC {
+				left: 1425px;
+				top: 237px;
+				transform: rotate(215deg);
+			}
+			
+			#fr3hC {
+				left: 1525px;
+				top: 260px;
+				transform: rotate(15deg);
+			}
+			
+			#fr3iC {
+				left: 1425px;
+				top: 210px;
+				transform: rotate(165deg);
+			}
+
+			#fr3bC, #fr3eC, #fr3fC, #fr3gC, #fr3jC, #fr3kC, #fr3lC, #fr3mC {
+				left: 0px;
+				top: 0px;
+				width: 27px;
+				height: 17px;
+				position: absolute;
+				visibility: visible;
+				transform-origin: 50% 50%;
+			}
+
+			#fr3b, #fr3e, #fr3f, #fr3g, #fr3j, #fr3k, #fr3l, #fr3m  {
+				left: 0px;
+				top: 0px;
+				width: 27px;
+				height: 17px;
+				position: absolute;
+				visibility: visible;
+			}
+			
+			#fr3bC {
+				left: 1380px;
+				top: 215px;
+			}
+			
+			#fr3eC {
+				left: 1465px;
+				top: 245px;
+				transform: rotate(115deg);
+			}
+			
+			#fr3fC {
+				left: 1485px;
+				top: 225px;
+				transform: rotate(290deg);
+			}
+			
+			#fr3gC {
+				left: 1385px;
+				top: 218px;
+				transform: rotate(230deg);
+			}
+			
+			#fr3jC {
+				left: 1485px;
+				top: 265px;
+				transform: rotate(-230deg);
+			}
+			
+			#fr3kC {
+				left: 1455px;
+				top: 255px;
+				transform: rotate(30deg);
+			}
+			
+			#fr3lC {
+				left: 1525px;
+				top: 215px;
+				transform: rotate(330deg);
+			}
+			
+			#fr3mC {
+				left: 1505px;
+				top: 225px;
+				transform: rotate(-230deg);
+			}
+			
+			#fr3cC, #fr3nC {
+				left: 1421px;
+				top: 205px;
+				width: 28px;
+				height: 28px;
+				position: absolute;
+				visibility: visible;
+				transform-origin: 50% 50%;
+			}
+
+			#fr3c, #fr3n {
+				left: 0px;
+				top: 0px;
+				width: 28px;
+				height: 28px;
+				position: absolute;
+				visibility: visible;
+			}
+			
+			#fr3nC {
+				left: 1525px;
+				top: 255px;
+				transform: rotate(-230deg);
+			}
+
+
+
+			
+
+			.smooth {		
+				will-change: transform;
+				 -webkit-transform-style:preserve-3d;
+				 -moz-transform-style:preserve-3d;
+				 -webkit-transform: translateZ(1px));
+				 -moz-transform: translateZ(1px));
+			}
+
+
+			
+		</style>
+	</head>
+
+	<body>
+	
+		<script src="gsap.min.js"></script>
+		
+		<div id='container'>
+			<div id="banner" >
+				<div id='contents'>
+
+					<div><img id='bg1' src='mlogo.jpg' alt="" /></div>
+					<div><img id='cal' src='mcal.jpg' alt="" /></div>
+					<div><img id='n1' src='nutr1.jpg' alt="" /></div>
+					<div><img id='n2' src='nutr2.jpg' alt="" /></div>
+					
+					<div id='c1C'><img id='c1' src='copy1.png' alt="" /></div>
+					<div id='c2C'><img id='c2' src='copy2.png' alt="" /></div>
+					<div id='c3C'><img id='c3' src='copy3.png' alt="" /></div>
+					
+					<div id='fruit1'>
+						<div id='fr1aC'><img id='fr1a' src='fruit1a.png' alt="" /></div>
+						<div id='fr1bC'><img id='fr1b' src='fruit1b.png' alt="" /></div>
+					</div>
+						<div id='can1C'><img id='can1' src='can1.png' alt="" /></div>
+					<div id='fruit1b'>
+						<div id='fr1cC'><img id='fr1c' src='fruit1a.png' alt="" /></div>
+						<div id='fr1dC'><img id='fr1d' src='fruit1b.png' alt="" /></div>
+						<div id='fr1eC'><img id='fr1e' src='fruit1a.png' alt="" /></div>
+						<div id='fr1fC'><img id='fr1f' src='fruit1b.png' alt="" /></div>
+						<div id='fr1gC'><img id='fr1g' src='fruit1a.png' alt="" /></div>
+						<div id='fr1hC'><img id='fr1h' src='fruit1b.png' alt="" /></div>
+						<div id='fr1iC'><img id='fr1i' src='fruit1a.png' alt="" /></div>
+						<div id='fr1jC'><img id='fr1j' src='fruit1a.png' alt="" /></div>
+						<div id='fr1kC'><img id='fr1k' src='fruit1b.png' alt="" /></div>
+					</div>
+					
+					<div id='fruit2'>
+						<div id='fr2aC'><img id='fr2a' src='fruit2a.png' alt="" /></div>
+						<div id='fr2bC'><img id='fr2b' src='fruit2b.png' alt="" /></div>
+					</div>
+						<div id='can2C'><img id='can2' src='can2.png' alt="" /></div>
+					<div id='fruit2b'>
+						<div id='fr2cC'><img id='fr2c' src='fruit2a.png' alt="" /></div>
+						<div id='fr2dC'><img id='fr2d' src='fruit2b.png' alt="" /></div>
+						<div id='fr2eC'><img id='fr2e' src='fruit2a.png' alt="" /></div>
+						<div id='fr2fC'><img id='fr2f' src='fruit2a.png' alt="" /></div>
+						<div id='fr2gC'><img id='fr2g' src='fruit2b.png' alt="" /></div>
+						<div id='fr2hC'><img id='fr2h' src='fruit2a.png' alt="" /></div>
+						<div id='fr2iC'><img id='fr2i' src='fruit2a.png' alt="" /></div>
+						<div id='fr2jC'><img id='fr2j' src='fruit2a.png' alt="" /></div>
+						<div id='fr2kC'><img id='fr2k' src='fruit2a.png' alt="" /></div>
+						<div id='fr2lC'><img id='fr2l' src='fruit2a.png' alt="" /></div>
+					</div>
+					
+					<div id='fruit3'>
+						<div id='fr3aC'><img id='fr3a' src='fruit3a.png' alt="" /></div>
+					</div>
+					<div id='can3C'><img id='can3' src='can3.png' alt="" /></div>
+					<div id='fruit3b'>
+						<div id='fr3bC'><img id='fr3b' src='fruit3b.png' alt="" /></div>
+						<div id='fr3cC'><img id='fr3c' src='fruit3c.png' alt="" /></div>
+						<div id='fr3dC'><img id='fr3d' src='fruit3a.png' alt="" /></div>
+						<div id='fr3eC'><img id='fr3e' src='fruit3b.png' alt="" /></div>
+						<div id='fr3fC'><img id='fr3f' src='fruit3b.png' alt="" /></div>
+						<div id='fr3gC'><img id='fr3g' src='fruit3b.png' alt="" /></div>
+						<div id='fr3hC'><img id='fr3h' src='fruit3a.png' alt="" /></div>
+						<div id='fr3iC'><img id='fr3i' src='fruit3a.png' alt="" /></div>
+						<div id='fr3jC'><img id='fr3j' src='fruit3b.png' alt="" /></div>
+						<div id='fr3kC'><img id='fr3k' src='fruit3b.png' alt="" /></div>
+						<div id='fr3lC'><img id='fr3l' src='fruit3b.png' alt="" /></div>
+						<div id='fr3mC'><img id='fr3m' src='fruit3b.png' alt="" /></div>
+						<div id='fr3nC'><img id='fr3n' src='fruit3c.png' alt="" /></div>
+					</div>
+					
+					<div id='canlock'>
+						<img id='sh1' src='shadow.png' alt="" />
+						<img id='cl1' src='can1.png' alt="" />
+						<img id='sh3' src='shadow.png' alt="" />
+						<img id='cl3' src='can3.png' alt="" />
+						<img id='sh2' src='shadow.png' alt="" />
+						<img id='cl2' src='can2.png' alt="" />
+					</div>
+					
+					<div><img id='cta' src='cta.jpg' alt="" /></div>
+						
+					
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			// polite image check
+			var allLoaded = false;
+			var imgCount = 0;
+			var glCount = 0;
+			var glMax = 4;
+			const imageURLS =["can1.png", "can2.png", "can3.png", "copy1.png", "copy2.png", "copy3.png", "fruit1a.png", "fruit1b.png", "fruit2a.png", "fruit2b.png", "fruit3a.png", "fruit3b.png", "fruit3c.png", "mcal.jpg", "mlogo.jpg", "nutr1.jpg", "nutr2.jpg", "shadow.png"]
+			var images = [];
+
+			const onImageLoad = function(){ imgCount += 1; } 
+			
+			const loadImage = function(url){
+				images.push(new Image());
+				images[images.length-1].src = url
+				images[images.length-1].onload = onImageLoad;
+			}
+			const waitForLoaded = function(){
+				if(imgCount === images.length){
+					allLoaded = true;   
+					politeInit();
+				}else{
+					setTimeout(waitForLoaded,100); 
+				}
+			}
+
+			imageURLS.forEach(loadImage);    
+			setTimeout(waitForLoaded,100); 
+			
+			
+			function politeInit () {
+		
+				var $ = function(id){ return document.getElementById(id)};
+					
+				gsap.set($('canlock'), { scale: .33, y: -28 });
+				gsap.set($('fr2cC'), { scale: .75 });
+				gsap.set($('fr3fC'), { scale: .75 });
+				gsap.set($('can1'), { rotation: 45, scale: .38, y: -149 });
+				gsap.set($('can2'), { rotation: 45, scale: .36, y: -148 });
+				gsap.set($('can3'), { rotation: 45, scale: .38, y: -149 });
+				
+				$('contents').style.display='block';
+
+				function animate () {
+
+					gsap.to($('canlock'), .75, {delay: 2.1 , x: -1000,  ease: "power1.in" });
+					gsap.to($('cal'), .75, {delay: 2.1 , x: -1000, autoAlpha: 0,  ease: "power1.in" });
+					gsap.to($('n1'), .75, {delay: 2.1 , x: -1000, autoAlpha: 0,  ease: "power1.in" });
+					gsap.set($('canlock'), { delay: 4, x: 1000 });
+					gsap.set($('cal'), { delay: 4, x: 1000, autoAlpha: 1 });
+					
+					gsap.to($('can1'), 1.1, {delay: 2 , x: -1000, rotation: 0,  ease: "power2.out" });
+					gsap.to($('c1'), .55, {delay: 2.55 , x: -1000 });
+					
+					gsap.to($('fr1aC'), 3, {delay: 1.5 , x: -1200,  rotation: 340 });
+					gsap.to($('fr1bC'), 3.15, {delay: 2 , x: -1200,  rotation: -290 });
+					gsap.to($('fr1cC'), 3.25, {delay: 1.35 , x: -1200,  rotation: 0 });
+					gsap.to($('fr1dC'), 3.25, {delay: 1.5 , x: -1200,  rotation: 65 });
+					gsap.to($('fr1eC'), 3.5, {delay: 1.25 , x: -1200,  rotation: -280 });
+					gsap.to($('fr1fC'), 3.6, {delay: 1.4 , x: -1200,  rotation: 125 });
+					gsap.to($('fr1gC'), 3.7, {delay: 1.7 , x: -1200,  rotation: -125 });
+					gsap.to($('fr1iC'), 3.8, {delay: 1.3 , x: -1200,  rotation: 325 });
+					gsap.to($('fr1jC'), 3.4, {delay: 1.5 , x: -1200,  rotation: 125 });
+					gsap.to($('fr1jC'), 3.55, {delay: 1.45 , x: -1200,  rotation: 125 });
+					gsap.to($('fr1hC'),3.6, {delay: 1.35 , x: -1200,  rotation: 325 });
+					gsap.to($('fr1kC'), 3.8, {delay: 1.25 , x: -1200,  rotation: 325 });
+					gsap.to($('fruit1'), 3.4, {delay: 4.75 , x: -3000,  ease: "power0.in" });
+					gsap.to($('fruit1b'), 3.4, {delay: 4.75 , x: -3000,  ease: "power0.in" });
+					
+					gsap.to($('can1'), .75, {delay: 4.55 , x: -2000,  ease: "power1.in" });
+					gsap.to($('c1'), .75, {delay: 4.55 , x: -2000,  ease: "power1.in" });
+
+					gsap.to($('can2'), 1.1, {delay: 4.9 , x: -1000, rotation: 0,  ease: "power2.out" });
+					gsap.to($('c2'), .55, {delay: 5.35 , x: -1000 });
+					
+					gsap.to($('fr2aC'), 3.15, {delay: 4.5 , x: -1200,  rotation: 240 });
+					gsap.to($('fr2bC'), 3.5, {delay: 4.6 , x: -1200,  rotation: -190 });
+					gsap.to($('fr2cC'), 3.25, {delay: 4.55 , x: -1200,  rotation: 0 });
+					gsap.to($('fr2dC'), 3.4, {delay: 4.45 , x: -1200,  rotation: 165 });
+					gsap.to($('fr2eC'), 3.15, {delay: 4.6 , x: -1200,  rotation: -80 });
+					gsap.to($('fr2fC'), 3.6, {delay: 4.55 , x: -1200,  rotation: 125 });
+					gsap.to($('fr2gC'), 3.6, {delay: 4.4 , x: -1200,  rotation: -125 });
+					gsap.to($('fr2hC'), 3.3, {delay: 4.8 , x: -1200,  rotation: 325 });
+					gsap.to($('fr2iC'), 3.6, {delay: 4.85 , x: -1200,  rotation: -325 });
+					gsap.to($('fr2jC'), 3.45, {delay: 4.5 , x: -1200,  rotation: 125 });
+					gsap.to($('fr2kC'), 3.55, {delay: 4.75 , x: -1200,  rotation: 225 });
+					gsap.to($('fr2lC'), 3.7, {delay: 4.6 , x: -1200,  rotation: -205 });
+					gsap.to($('fruit2'), 3.2, {delay: 7.5 , x: -3000,  ease: "power0.in" });
+					gsap.to($('fruit2b'), 3.2, {delay: 7.5 , x: -3000,  ease: "power0.in" });
+					
+					gsap.to($('can2'), .75, {delay: 7.3 , x: -2000,  ease: "power1.in" });
+					gsap.to($('c2'), .75, {delay: 7.3 , x: -2000,  ease: "power1.in" });
+
+					gsap.to($('can3'), 1.1, {delay: 7.4 , x: -1000, rotation: 0,  ease: "power2.out" });
+					gsap.to($('c3'), .55, {delay: 7.95 , x: -1000 });
+					
+					gsap.to($('fr3aC'), 3.05, {delay: 6.75 , x: -1200,  rotation: 240 });
+					gsap.to($('fr3bC'), 3.255, {delay: 7.5 , x: -1200,  rotation: -290 });
+					gsap.to($('fr3cC'), 3, {delay: 7 , x: -1200,  rotation: 0 });
+					gsap.to($('fr3dC'), 2.9, {delay: 7.05 , x: -1200,  rotation: 165 });
+					gsap.to($('fr3eC'), 3.15, {delay: 6.75 , x: -1200,  rotation: -80 });
+					gsap.to($('fr3fC'), 2.9, {delay: 6.8 , x: -1200,  rotation: 225 });
+					gsap.to($('fr3gC'), 3, {delay: 6.85 , x: -1200,  rotation: 25 });
+					gsap.to($('fr3hC'), 2.85, {delay: 6.95 , x: -1200,  rotation: 225 });
+					gsap.to($('fr3iC'), 3, {delay: 6.7 , x: -1200,  rotation: -325 });
+					gsap.to($('fr3jC'), 3.25, {delay: 6.8 , x: -1200,  rotation: 125 });
+					gsap.to($('fr3kC'), 2.8, {delay: 7.1 , x: -1200,  rotation: -25 });
+					gsap.to($('fr3lC'), 3.3, {delay: 6.95 , x: -1200,  rotation: -425 });
+					gsap.to($('fr3mC'), 3.1, {delay: 7.15 , x: -1200,  rotation: 125 });
+					gsap.to($('fr3nC'), 3, {delay: 7.2 , x: -1200,  rotation: 225 });
+					gsap.to($('fruit3'), 3.2, {delay: 10.1 , x: -3000,  ease: "power0.in" });
+					gsap.to($('fruit3b'), 3.2, {delay: 10.1 , x: -3000,  ease: "power0.in" });
+					
+					gsap.to($('can3'), .75, {delay: 9.9 , x: -2000,  ease: "power1.in" });
+					gsap.to($('c3'), .75, {delay: 9.9 , x: -2000,  ease: "power1.in" });
+			
+					gsap.to($('canlock'), .75, {delay: 10.5 , x: -30,  ease: "power1.out" });
+					gsap.to($('cta'), .25, {delay: 11.25 , x: -340,  ease: "power1.out" });
+					gsap.to($('n2'), .25, {delay: 11.25 , x: -370,  ease: "power1.out" });
+					gsap.to($('cal'), .25, {delay: 11.25 , x: 0,  ease: "power1.out" });
+
+					/**/
+				}
+
+				
+				onExitHandler1 = function(e) {
+					window.open(window.clickTag);
+				
+					e.preventDefault();
+					e.stopPropagation();
+					e.stopImmediatePropagation();
+					 return false;
+				}
+				
+				animate();
+				
+				banner.addEventListener('click', 	onExitHandler1, false);
+
+			}
+
+		</script>
+	</body>
+</html>
